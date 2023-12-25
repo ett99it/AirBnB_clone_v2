@@ -30,7 +30,10 @@ def hbnb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def c_with_text(text):
-    """Displays 'C' followed by the value of <text>."""
+    """Displays 'C' followed by the value of <text>.
+    
+    	Replace any underscore in <text> with slashes
+    """
     text_f = text.replace('_', ' ')
     return "C {}".format(text_f)
 
