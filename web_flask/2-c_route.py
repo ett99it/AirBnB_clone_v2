@@ -7,7 +7,7 @@ Routes:
     /hbnb: Displays 'HBNB'.
     /c/<text>: Displays 'C' followed by the value of <text>.
 """
-from flask import Flask, request
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -32,4 +32,4 @@ def c_with_text(text):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", route=5000)
+    app.run(host="0.0.0.0", port=5000)

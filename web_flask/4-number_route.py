@@ -28,13 +28,11 @@ def hbnb():
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def c(text):
-    """Displays 'C' followed by the value of <text>.
+def c_with_text(text):
+    """Displays 'C' followed by the value of <text>."""
+    text_f = text.replace('_', ' ')
+    return "C {}".format(text_f)
 
-    Replaces any underscores in <text> with slashes.
-    """
-    text = text.replace('_', ' ')
-    return "C {}".format(text)
 
 
 @app.route("/python", strict_slashes=False)
@@ -55,4 +53,4 @@ def number(n):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", route=5000)
+    app.run(host="0.0.0.0", port=5000)
