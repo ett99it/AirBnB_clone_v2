@@ -31,7 +31,7 @@ def c(text):
 
     Replaces any underscores in <text> with slashes.
     """
-    text = text.replace("_", " ")
+    text = text.replace('_', ' ')
     return "C {}".format(text)
 
 
@@ -42,7 +42,7 @@ def python(text="is cool"):
 
     Replaces any underscores in <text> with slashes.
     """
-    text = text.replace("_", " ")
+    text = text.replace('_', ' ')
     return "Python {}".format(text)
 
 
